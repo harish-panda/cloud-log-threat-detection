@@ -1,0 +1,832 @@
+# Cloud Log Threat Detection Framework - .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+
+# IDE - Eclipse
+.project
+.classpath
+.settings/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Project specific
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/threat_detection.db
+
+# ML Models
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.model
+models/*.bin
+
+# Data files (keep structure, ignore generated data)
+data/*.csv
+data/*.json
+data/*.parquet
+data/*.log
+data/enhanced_training_logs.log
+data/test_logs.log
+
+# Configuration files with secrets
+config/secrets.json
+config/production.json
+config/staging.json
+.env.local
+.env.production
+.env.staging
+
+# Backup files
+backups/
+*.backup
+*.bak
+*.old
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Grafana
+monitoring/grafana/data/
+monitoring/grafana/plugins/
+monitoring/grafana/provisioning/datasources/
+monitoring/grafana/provisioning/alerting/
+
+# PostgreSQL data
+postgres_data/
+pg_data/
+*.sql.backup
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Terraform (if any infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Kubernetes secrets
+*.secret
+secrets/
+*.key
+*.crt
+*.pem
+
+# Performance profiling
+*.prof
+*.profile
+
+# Monitoring and metrics
+prometheus_data/
+grafana_data/
+metrics/
+
+# SSL certificates
+*.crt
+*.key
+*.pem
+ssl/
+
+# Archive files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Editor backup files
+*~
+*.swp
+*.swo
+*#
+
+# OS generated files
+.DS_Store?
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local development
+local/
+dev/
+development/
+
+# Test outputs
+test_results/
+test_reports/
+coverage.xml
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# CI/CD
+.github/workflows/secret*
+
+# Local configuration overrides
+config/local_*
+config/dev_*
+config/test_*
+
+# Application specific
+threat_detection_logs/
+security_logs/
+ml_experiments/
+model_artifacts/
+feature_store/
+
+# Backup and archive
+archive/
+backups/
+snapshots/
+
+# Runtime and PID files
+*.pid
+*.lock
+*.sock
+
+# Cloud provider specific
+.aws/
+.azure/
+.gcp/
+
+# Secrets and credentials
+secrets/
+credentials/
+*.p12
+*.pfx
+keystore/
+
+# Local monitoring
+monitoring/local_*
+monitoring/dev_*
+
+# Experimental features
+experimental/
+beta/
+alpha/
+
+# Performance and profiling
+benchmarks/
+profiling/
+performance/
+
+# Third-party integrations
+integrations/secrets/
+third_party/
+
+# Additional security and sensitive files
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+keystore/
+truststore/
+.jks
+*.p8
+*.p10
+*.der
+*.cer
+*.p7b
+*.p7c
+*.p7r
+*.p7s
+*.crl
+*.srl
+*.sig
+*.signature
+
+# Cloud and platform specific
+.aws/
+.azure/
+.gcp/
+.google/
+.kube/
+kubectl/
+helm/
+terraform/
+packer/
+ansible/
+puppet/
+chef/
+salt/
+
+# Database and data storage
+*.dump
+*.sql
+*.backup
+*.bak
+*.old
+*.temp
+*.tmp
+*.swp
+*.swo
+data/raw/
+data/processed/
+data/intermediate/
+data/external/
+data/internal/
+data/sensitive/
+data/private/
+data/confidential/
+
+# Machine learning and AI
+mlflow/
+mlruns/
+wandb/
+tensorboard/
+.dvc/
+.cache/
+mlartifacts/
+model_registry/
+feature_store/
+experiments/
+checkpoints/
+saves/
+weights/
+embeddings/
+datasets/
+
+# Monitoring and observability
+prometheus/
+grafana/
+elasticsearch/
+kibana/
+logstash/
+fluentd/
+jaeger/
+zipkin/
+opentelemetry/
+metrics/
+tracing/
+logs/
+alerts/
+
+# CI/CD and DevOps
+.github/workflows/secrets/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+appveyor.yml
+azure-pipelines.yml
+bitbucket-pipelines.yml
+buildspec.yml
+jenkins/
+jenkinsfile
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.dev.yml
+docker-compose.test.yml
+
+# Documentation and static assets
+docs/_site/
+docs/.vitepress/dist/
+docs/.quartz/public/
+static/
+public/
+assets/
+dist/
+build/
+out/
+
+# Package managers and dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
+Gemfile.lock
+Pipfile.lock
+poetry.lock
+conda-lock.yml
+environment.yml
+requirements-dev.txt
+requirements-test.txt
+
+# Runtime and system files
+*.pid
+*.lock
+*.sock
+*.socket
+*.daemon
+*.service
+*.systemd
+*.init
+*.rc
+*.sh
+*.bat
+*.cmd
+*.ps1
+*.vbs
+*.wsf
+*.wsc
+.reg
+*.inf
+*.sys
+*.dll
+*.exe
+*.msi
+.deb
+.rpm
+.dmg
+.pkg
+.app
+.snap
+.flatpak
+
+# Backup and archive files
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.Z
+.zip
+.zipx
+.7z
+.rar
+.arj
+.cab
+.lha
+.lzh
+.ace
+.arc
+.arj
+.bz2
+.gz
+.lz
+.lzma
+.lzo
+.rz
+.sfark
+.sz
+.xz
+.z
+.Z
+.zoo
+.zpaq
+.zz
+.zzz
+
+# Configuration and environment files
+*.env
+*.env.*
+!.env.example
+!.env.template
+!.env.sample
+config/local/
+config/dev/
+config/test/
+config/staging/
+config/prod/
+config/secrets/
+config/private/
+config/credentials/
+config/keys/
+config/certs/
+config/ssl/
+
+# Temporary and cache directories
+tmp/
+temp/
+cache/
+.ccache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.vscode-test/
+.nyc_output
+.coverage
+coverage/
+coverage/
+htmlcov/
+lcov.info
+lcov.dat
+*.lcov
+*.gcov
+*.gcda
+*.gcno
+
+# IDE and editor specific files
+.vscode/
+.vscode-test/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Large binary files and media
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.svg
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.odt
+*.ods
+*.odp
+
+# Research and experimental files
+research/
+papers/
+theses/
+dissertations/
+publications/
+drafts/
+notes/
+scratch/
+sandbox/
+playground/
+experimental/
+prototype/
+proof-of-concept/
+poc/
+
+# Legal and compliance
+legal/
+compliance/
+audit/
+contracts/
+licenses/
+patents/
+trademarks/
+copyrights/
+
+# Personal and user-specific
+user/
+personal/
+private/
+home/
+desktop/
+documents/
+downloads/
+pictures/
+music/
+videos/
+movies/
+books/
+
+# System and network files
+network/
+system/
+etc/
+var/
+usr/
+opt/
+proc/
+sys/
+dev/
+run/
+srv/
+mnt/
+media/
+lost+found/
+
+# Development tools and utilities
+tools/
+utils/
+scripts/
+bin/
+sbin/
+lib/
+lib64/
+libexec/
+share/
+include/
+
+# Testing and quality assurance
+test/
+tests/
+testing/
+qa/
+quality/
+e2e/
+integration/
+unit/
+performance/
+load/
+stress/
+penetration/
+security/
+
+# Documentation and wikis
+wiki/
+documentation/
+docs/
+manuals/
+guides/
+tutorials/
+examples/
+samples/
+demos/
+
+# Migration and data transfer
+migration/
+migrate/
+transfer/
+import/
+export/
+sync/
+backup/
+restore/
+recover/
+
+# Analytics and reporting
+analytics/
+reports/
+dashboards/
+metrics/
+statistics/
+insights/
+forecasts/
+predictions/
+
+# Communication and collaboration
+chat/
+slack/
+discord/
+teams/
+zoom/
+meetings/
+calls/
+emails/
+messages/
+
+# External services and APIs
+services/
+apis/
+webhooks/
+callbacks/
+notifications/
+reminders/
+
+# Localization and internationalization
+i18n/
+l10n/
+locale/
+lang/
+languages/
+translations/
+localization/
+internationalization/
+
+# Performance and optimization
+performance/
+optimization/
+profiling/
+benchmarking/
+tuning/
+scaling/
+load-balancing/
+caching/
+cdn/
+
+# Security and authentication
+security/
+auth/
+authentication/
+authorization/
+oauth/
+jwt/
+tokens/
+sessions/
+cookies/
+csrf/
+
+# Storage and file systems
+storage/
+filesystems/
+disks/
+volumes/
+mounts/
+partitions/
+raid/
+lvm/
+zfs/
+btrfs/
+
+.windsurf

@@ -1,0 +1,44 @@
+# Cloud Log Threat Detection Framework - Dependencies
+# 2026 Latest Stable Versions (April 2026) - Fixed Conflicts
+
+# Core framework
+fastapi==0.135.3
+uvicorn[standard]==0.44.0
+
+# Docker support
+docker==7.1.0
+pydantic==2.12.5
+python-dotenv==1.0.1
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.36
+
+# Data Processing & ML
+pandas==3.0.2
+numpy==2.1.0
+scikit-learn==1.8.0
+
+# Utilities
+python-dateutil==2.9.0
+watchdog==3.0.0
+requests==2.32.3
+cryptography==44.0.0
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Testing & Development
+pytest==8.3.4
+pytest-cov==7.1.0
+pytest-asyncio==0.21.1
+bandit==1.7.5
+safety==3.2.0
+mypy==1.8.0
+pre-commit==3.5.0
+sphinx==9.1.0
+jupyter==1.1.1
+
+# Fixed packaging dependency
+packaging==24.0

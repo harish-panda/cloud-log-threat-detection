@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "build_number": 1,
+  "release_date": "2026-04-26T02:13:45.282868",
+  "git_commit": "fed3b2ef2788f937d063e41f5afb488dabe69a4d",
+  "app_version": "1.0.0",
+  "ml_model_version": "1.0.0",
+  "database_schema_version": "1.0.0",
+  "api_version": "v1",
+  "changes": [
+    "Initial release",
+    "Basic threat detection",
+    "ML model training",
+    "Grafana dashboards"
+  ],
+  "is_stable": true
+}
